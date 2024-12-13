@@ -1,0 +1,638 @@
+/* Import Google Font (Montserrat) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+body {
+    background-color: #000;
+    color: #e2d9c8; /* Off-white text color */
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Container for content width */
+.container {
+    max-width: 960px; /* Slightly narrower container */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+header {
+    padding: 20px 0;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #e2d9c8;
+    text-decoration: none;
+     float: left;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+     float: right;
+}
+
+nav li {
+    display: inline;
+    margin-left: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e2d9c8;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+    color: gold; /* Gold color on hover */
+}
+
+
+/* Hero section styles */
+.hero {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    margin-bottom: 10px; /* Reduced margin */
+    color: #e2d9c8; /* Off-white heading color */
+}
+
+.hero h2 {
+    font-size: 1.8em;
+    font-weight: 400;
+    color: #b0a08b; /* Lighter shade for subheading */
+    margin-bottom: 20px;
+}
+
+
+.hero p {
+    color: #b0a08b; /* Lighter text color */
+    font-size: 1.1em; /* Slightly larger font size */
+    line-height: 1.6; /* Improved line height */
+    max-width: 700px;
+    margin: 0 auto; /* Center the paragraph */
+}
+
+
+/* Newsletter signup within hero */
+.newsletter-signup {
+    margin-top: 40px; /* Space below the newsletter signup */
+}
+
+
+.newsletter-signup input[type="email"] {
+    width: 300px; /* Adjust as needed */
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+
+.newsletter-signup button {
+    background-color: gold; /* Same as other buttons */
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+/* Digital Playground styles */
+.my-digital-playground {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.my-digital-playground h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #e2d9c8;
+    margin-bottom: 10px;
+}
+
+.my-digital-playground p {
+     color: #b0a08b;
+    font-size: 1.1em;
+    line-height: 1.6;
+     max-width: 700px;
+    margin: 0 auto;
+}
+/* What Can We Create Together styles */
+.what-can-we-create {
+    padding: 80px 0;
+    text-align: center;
+}
+.what-can-we-create h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #e2d9c8;
+    margin-bottom: 10px;
+}
+.what-can-we-create p {
+     color: #b0a08b;
+    font-size: 1.1em;
+    line-height: 1.6;
+     max-width: 700px;
+    margin: 0 auto;
+}
+/* Services section styles */
+.services {
+    padding: 80px 0;
+    text-align: center; /* Center-align content */
+}
+
+.services h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #e2d9c8;
+    margin-bottom: 40px;
+}
+
+
+.service-box {
+    background-color: #1a1a1a; /* Darker background */
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 20px; /* Add margin between services */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    text-align: left; /* Align service content to the left */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.service-box:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+}
+
+
+
+.service-box h2 {
+    font-size: 1.5em; /* Slightly smaller heading */
+    font-weight: 700;
+    color: #e2d9c8;
+    margin-bottom: 15px;
+}
+
+
+.service-box p {
+    color: #b0a08b;
+    margin-bottom: 20px;
+}
+
+/* Blog section styles */
+.blog {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.blog h2 {
+    font-size: 2.5em; /* Increased heading size */
+    font-weight: 700;
+    color: #e2d9c8;
+    margin-bottom: 20px;
+}
+
+.blog p {
+    color: #b0a08b;
+    margin-bottom: 40px;
+}
+
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+.blog-post {
+    background-color: #1a1a1a; /* Darker background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transitions */
+}
+
+.blog-post:hover {
+    transform: translateY(-5px); /* Slight hover lift */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
+}
+
+.blog-post h3 {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: #e2d9c8; /* Off-white heading color */
+    margin-bottom: 15px;
+}
+
+
+.blog-post p {
+    color: #b0a08b;
+    margin-bottom: 20px;
+}
+
+
+.blog-post a {
+    color: gold;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease; /* Add transition */
+}
+
+.blog-post a:hover {
+    color: #d4af37; /* Slightly darker gold on hover */
+}
+
+
+
+/* About me styles */
+.about-me {
+    padding: 80px 0;
+    text-align: center; /* Center align the content */
+    background-color: #1a1a1a; /* Dark background */
+}
+
+.about-me h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #e2d9c8; /* Off-white heading color */
+    margin-bottom: 10px;
+}
+
+
+.about-me .subtitle {
+    font-size: 1.1em;
+    color: #b0a08b; /* Slightly lighter subtitle color */
+    margin-bottom: 20px;
+}
+
+.about-me .avatar {
+    width: 100px; /* Adjust size as needed */
+    height: 100px;
+    border-radius: 50%;
+    background-color: #e2d9c8; /* Placeholder color */
+    margin: 0 auto 20px;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about-me .avatar i {
+    font-size: 4em; /* Adjust icon size */
+    color: #1a1a1a; /* Icon color */
+}
+
+.about-me h3 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #e2d9c8;
+    margin-bottom: 10px;
+}
+
+
+.about-me p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #b0a08b; /* Lighter text color */
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Call to action (CTA) styles */
+.cta {
+    padding: 80px 0; /* Increased padding */
+    background-color: #000;
+    text-align: center;
+}
+
+
+.cta h2 {
+    font-size: 2em; /* Slightly larger heading */
+    font-weight: 700;
+    color: #e2d9c8; /* Off-white heading color */
+    margin-bottom: 20px;
+}
+
+
+.cta p {
+    font-size: 1.1em;
+    color: #b0a08b;
+    margin-bottom: 30px; /* Increased margin */
+}
+
+.cta input[type="email"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #b0a08b;
+    border-radius: 5px;
+    margin-right: 10px; /* Add spacing between input and button */
+    color: #b0a08b;
+    background-color: #1a1a1a;
+}
+
+.cta button {
+    background-color: gold;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700; /* Bold button text */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+
+
+.cta button:hover {
+    background-color: #d4af37; /* Darker gold on hover */
+}
+
+
+
+
+/* Why work with me styles*/
+.why-collaborate {
+    text-align: center;
+    padding: 100px 0; /* Increased padding */
+    color: #e2d9c8; /* Off-white text color */
+}
+
+
+.why-collaborate h2 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.why-collaborate p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* My mission styles*/
+.my-mission {
+    padding: 80px 0;
+    text-align: center; /* Center align the content */
+    background-color: #1a1a1a; /* Dark background */
+}
+
+
+.my-mission h2 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.my-mission p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+/* Blog section styles */
+.blog {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.blog h2 {
+    font-size: 2.5em; /* Increased heading size */
+    font-weight: 700;
+    color: #e2d9c8;
+    margin-bottom: 20px;
+}
+
+.blog p {
+    color: #b0a08b;
+    margin-bottom: 40px;
+}
+
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+.blog-post {
+    background-color: #1a1a1a; /* Darker background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transitions */
+}
+
+.blog-post:hover {
+    transform: translateY(-5px); /* Slight hover lift */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
+}
+
+.blog-post h3 {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: #e2d9c8; /* Off-white heading color */
+    margin-bottom: 15px;
+}
+
+
+.blog-post p {
+    color: #b0a08b;
+    margin-bottom: 20px;
+}
+
+
+.blog-post a {
+    color: gold;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease; /* Add transition */
+}
+
+.blog-post a:hover {
+    color: #d4af37; /* Slightly darker gold on hover */
+}
+
+
+
+/* About me styles */
+.about-me {
+    padding: 80px 0;
+    text-align: center; /* Center align the content */
+    background-color: #1a1a1a; /* Dark background */
+}
+
+.about-me h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #e2d9c8; /* Off-white heading color */
+    margin-bottom: 10px;
+}
+
+
+.about-me .subtitle {
+    font-size: 1.1em;
+    color: #b0a08b; /* Slightly lighter subtitle color */
+    margin-bottom: 20px;
+}
+
+.about-me .avatar {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px;
+    border-radius: 50%; /* Makes the image circular */
+    overflow: hidden; /* Ensures the image stays within the circle */
+    margin: 0 auto 20px;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about-me .avatar img {
+    display: block; /* Makes the image a block element */
+    width: 100%; /* Makes the image fill the container width */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.about-me h3 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #e2d9c8;
+    margin-bottom: 10px;
+}
+
+
+.about-me p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #b0a08b; /* Lighter text color */
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Call to action (CTA) styles */
+.cta {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cta h2 {
+      font-size: 2em; /* Slightly larger heading */
+    font-weight: 700;
+    color: #e2d9c8; /* Off-white heading color */
+    margin-bottom: 20px;
+}
+.cta p {
+     font-size: 1.1em;
+    color: #b0a08b;
+      max-width: 700px;
+    margin: 0 auto;
+}
+
+
+.email-button {
+    background-color: gold;
+    color: #000;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px; /* Add spacing above the button */
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.email-button:hover {
+    background-color: #d4af37;
+}
+
+
+/* Footer CTA styles */
+.footer-cta {
+    background-color: #1a1a1a; /* Dark background */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.footer-cta h3 {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #e2d9c8;
+    margin-bottom: 10px;
+}
+
+
+.footer-cta p {
+    font-size: 1.1em;
+    color: #b0a08b;
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #e2d9c8; /* Lighter icon color */
+    margin: 0 10px; /* Spacing between icons */
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: gold;
+}
+
+
+
+/* Footer styles */
+footer {
+    background-color: #000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+footer p {
+    font-size: 0.9em;
+    color: #b0a08b;
+}
+
+
+/* Media query for responsiveness - adjust breakpoint as needed */
+@media (max-width: 768px) {
+    /* Styles for smaller screens */
+
+    .services, .blog-grid {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .cta input[type="email"] {
+        width: 100%; /* Full-width input */
+        margin-bottom: 10px; /* Add spacing below input */
+    }
+
+
+    /* Other adjustments for smaller screens if needed */
+}
