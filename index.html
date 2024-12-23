@@ -183,19 +183,43 @@
             <p>© 2024 All Rights Reserved.</p>
         </div>
     </footer>
-    <script type="text/javascript">
+    
+    <script defer type="text/javascript">
         (function(d, t) {
-            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-            v.onload = function() {
-              window.voiceflow.chat.load({
-                verify: { projectID: '676925b0f6a4fb453656cf8b' },
-                url: 'https://general-runtime.voiceflow.com',
-                versionID: 'production'
-              });
+            try {
+                var v = d.createElement(t),
+                    s = d.getElementsByTagName(t)[0];
+                
+                v.onload = function() {
+                    window.voiceflow.chat.load({
+                        verify: { 
+                            projectID: '676925b0f6a4fb453656cf8b' 
+                        },
+                        url: 'https://general-runtime.voiceflow.com',
+                        versionID: 'production',
+                        size: {
+                            height: 600,
+                            width: 400,
+                            mobile: {
+                                height: 300,
+                                width: 260
+                            }
+                        }
+                    });
+                };
+
+                v.onerror = function() {
+                    console.error('Failed to load Voiceflow chat widget');
+                };
+
+                v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
+                v.type = "text/javascript";
+                s.parentNode.insertBefore(v, s);
+            } catch (error) {
+                console.error('Error initializing Voiceflow:', error);
             }
-            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
         })(document, 'script');
-      </script>
+    </script>
 </body>
 
 </html>
