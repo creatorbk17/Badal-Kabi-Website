@@ -635,4 +635,12 @@ footer p {
 
 
     /* Other adjustments for smaller screens if needed */
+
+    /* Add these styles for the chat widget */
+    #voiceflow-chat {
+        max-width: 260px !important;
+        max-height: 300px !important;
+        right: 10px !important;
+        bottom: 10px !important;
+    }
 }
