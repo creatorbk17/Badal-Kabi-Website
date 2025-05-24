@@ -1,0 +1,188 @@
+/* navigation.css - CSS Custom Properties and Updated Rules */
+
+:root {
+    --primary-bg-color: #000;
+    --secondary-bg-color: #1a1a1a;
+    --primary-text-color: #e2d9c8; /* Off-white */
+    --secondary-text-color: #b0a08b; /* Lighter shade for subheadings/paragraphs */
+    --accent-color: gold;
+    --accent-color-darker: #d4af37;
+    --primary-font: 'Montserrat', sans-serif; 
+    --header-height: 70px; /* Approximate height of the sticky header */
+    --container-max-width: 960px; /* From style.css, for reference */
+    --header-border-color: #333; /* Used in header and mobile nav top border */
+    --mobile-nav-bg-color: #111; /* Background for the mobile dropdown */
+}
+
+/* navigation.css - Attempted Global Typographic Adjustments */
+body {
+    font-family: var(--primary-font); /* Already set in style.css, but reinforcing */
+    line-height: 1.7 !important;   /* Increase base line height for readability */
+    font-size: 16px !important; /* Ensure a base font size, style.css might not have one for body */
+}
+
+h1, h2, h3 {
+    font-family: var(--primary-font);
+    font-weight: 700 !important; /* Ensure headings are bold */
+    line-height: 1.3 !important; /* Slightly tighter line height for headings */
+    margin-top: 1.5em !important; /* Consistent top margin */
+    margin-bottom: 0.75em !important; /* Consistent bottom margin */
+}
+
+h1 {
+    font-size: 2.8em !important; /* Example size, adjust as needed */
+}
+
+h2 {
+    font-size: 2.2em !important; /* Example size */
+}
+
+h3 {
+    font-size: 1.6em !important; /* Example size */
+}
+
+p {
+    font-size: 1em !important; /* Base paragraph size */
+    line-height: 1.7 !important; /* Consistent with body */
+    margin-bottom: 1em !important;
+}
+
+/* Sticky Header */
+header {
+    background-color: var(--primary-bg-color); 
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    border-bottom: 1px solid var(--header-border-color); 
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+ul.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+ul.nav-links li {
+    margin-left: 30px;
+}
+
+ul.nav-links li:first-child {
+    margin-left: 0;
+}
+
+ul.nav-links a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+ul.nav-links a:hover,
+ul.nav-links a.active { 
+    color: var(--accent-color);
+}
+
+.burger {
+    display: none; 
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--primary-text-color);
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Media Query for Mobile Navigation */
+@media (max-width: 768px) {
+    ul.nav-links {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* This should ideally be related to the actual computed height of the header. Consider var(--header-height) or a more precise calculation if header content changes. */
+        left: 0;
+        width: 100%;
+        background-color: var(--mobile-nav-bg-color); 
+        padding: 10px 0;
+        border-top: 1px solid var(--header-border-color);
+    }
+
+    ul.nav-links.nav-active {
+        display: flex; 
+    }
+
+    ul.nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .burger {
+        display: block; 
+    }
+    
+    .burger.toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .burger.toggle .line2 {
+        opacity: 0;
+    }
+    .burger.toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+/* Footer Navigation Styles */
+ul.footer-nav {
+    list-style: none;
+    padding: 10px 0; 
+    margin: 0 0 15px 0; 
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+ul.footer-nav li {
+    display: inline; 
+}
+
+ul.footer-nav a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+ul.footer-nav a:hover {
+    color: var(--accent-color);
+}
+
+footer .copyright { 
+    margin-top: 10px; 
+    /* Assuming color for copyright is handled by style.css or inherited, typically var(--secondary-text-color) */
+}
+
+/* Adjust .hero section padding to account for sticky header */
+.hero {
+    /* Original padding-top was 100px. We add the header's height. */
+    padding-top: calc(100px + var(--header-height)) !important; 
+}
