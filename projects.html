@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Projects - Badal Kabi</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" href="favicon.svg">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navigation.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <a href="index.html">Badal Kabi</a>
+                <a href="index.html">BK</a>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#about-me">About</a></li>
                 <li><a href="projects.html" class="active">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <!-- Add other links as needed -->
+                <li><a href="mailto:creator.badalk@gmail.com">Contact</a></li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -154,8 +156,13 @@
     </main>
 
     <footer>
-        <p>© <span id="currentYear"></span> Badal Kabi. All rights reserved.</p>
-        <div class="social-links">
+        <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="mailto:creator.badalk@gmail.com">Contact</a></li>
+        </ul>
+        <p class="copyright">© <span id="currentYear"></span> Badal Kabi. All rights reserved.</p>
+        <div class="social-links"> <!-- Keeping social links, can be styled alongside footer-nav -->
             <a href="https://github.com/creatorbk17" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://linkedin.com/in/badal-kabi" target="_blank"><i class="fab fa-linkedin"></i></a>
             <!-- Add other social links -->
